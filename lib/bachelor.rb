@@ -15,6 +15,10 @@ def get_contestant_name(data, occupation)
       contestant_hash.each do |attribute, value|
         if attribute == "occupation" && value == occupation
           return contestant_hash["name"]
+        end
+      end
+    end
+  end
   # code here
 end
 
