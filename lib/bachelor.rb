@@ -43,7 +43,7 @@ def get_occupation(data, hometown)
     season_array.each do |contestant_hash|
       contestant_hash.each do |attribute, value|
         if attribute == "hometown" && value == hometown
-          occupation << contestant_hash["occupation"]
+          occupation_array << contestant_hash["occupation"]
         end
       end
     end
