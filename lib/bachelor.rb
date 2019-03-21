@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
-  data[season].each do |bachelor_hash|
-    bachelor_hash.each do |attribute, value|
+  data[season].each do |contestant_hash|
+    contestant_hash.each do |attribute, value|
       if attribute == "status" && value == "Winner"
         return bachelor_hash["name"].split(" ")[0]
       end
