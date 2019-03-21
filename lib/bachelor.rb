@@ -23,9 +23,9 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
+  hometowne_count = 0
   data.each do |season, season_array|
     season_array.each do |contestant_hash|
-      hometowne_count = 0
       contestant_hash.each do |attribute, value|
         if attribute == "hometown" && value == hometown
           hometowne_count += 1
